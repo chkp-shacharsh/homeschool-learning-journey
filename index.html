@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#243e32">
+  <meta name="description" content="From a homeschool learning framework to a playful local app. An open development journal about making learning personal, active, and full of possibility.">
+  <meta property="og:title" content="Learning in motion — a project journal">
+  <meta property="og:description" content="Small steps. Infinite possibilities. Follow a homeschool learning project from its first ideas to a working local app.">
+  <meta property="og:type" content="website">
+  <title>Learning in motion — a project journal</title>
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="header wrap">
+    <a class="brand" href="#" aria-label="Learning in motion, top of page"><span class="brand-mark" aria-hidden="true">✳</span><span>learning<br><b>in motion.</b></span></a>
+    <nav aria-label="Main navigation"><a href="#journey">The journey</a><a href="#workshop">The experience</a><a href="#next">What’s next <span aria-hidden="true">↗</span></a></nav>
+    <button id="motion" class="motion" type="button" aria-label="Pause animation"><span aria-hidden="true">Ⅱ</span><span class="motion-label">Pause motion</span></button>
+  </header>
+
+  <main id="main">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="status-dot"></span> A HOMESCHOOL PROJECT, TAKING SHAPE</div>
+        <h1 id="hero-title">Small steps.<br>Infinite<br><em>possibilities.</em></h1>
+        <p class="hero-description">Turning curiosity into a learning journey.<br>Built around play, shaped by feedback,<br>and made to grow one thoughtful step at a time.</p>
+        <a class="button dark" href="#journey">Explore our progress <span aria-hidden="true">↘</span></a>
+        <p class="hero-note"><span class="tiny-cross" aria-hidden="true">✳</span> From a first idea to a working local app.</p>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="art-grid"></div>
+        <svg id="orbit-art" viewBox="0 0 640 640" focusable="false">
+          <defs>
+            <radialGradient id="core"><stop stop-color="#f6ffbb"/><stop offset=".58" stop-color="#d7ef78"/><stop offset="1" stop-color="#b6d447"/></radialGradient>
+            <radialGradient id="bead"><stop stop-color="#fffef3"/><stop offset=".5" stop-color="#f0b18a"/><stop offset="1" stop-color="#b95833"/></radialGradient>
+            <filter id="shadow" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="14"/></filter>
+          </defs>
+          <ellipse cx="326" cy="523" rx="166" ry="25" fill="#667349" opacity=".12" filter="url(#shadow)"/>
+          <g class="orbit-system">
+            <g fill="none" stroke="#73875b" stroke-width=".7" opacity=".42">
+              <ellipse cx="320" cy="310" rx="259" ry="104" transform="rotate(-34 320 310)"/>
+              <ellipse cx="320" cy="310" rx="247" ry="147" transform="rotate(35 320 310)"/>
+              <ellipse cx="320" cy="310" rx="105" ry="247" transform="rotate(25 320 310)"/>
+              <circle cx="320" cy="310" r="204" stroke-dasharray="2 8"/>
+            </g>
+            <g class="petals" transform="translate(320 310)"></g>
+            <circle cx="320" cy="310" r="98" fill="url(#core)"/>
+            <g fill="none" stroke="#73943d" opacity=".23"><circle cx="320" cy="310" r="78"/><circle cx="320" cy="310" r="61"/><circle cx="320" cy="310" r="43"/></g>
+            <g class="satellites"></g>
+          </g>
+          <path d="M310 290h20m-10-10v20" stroke="#3f582b" stroke-width="2"/>
+          <text x="320" y="328" text-anchor="middle" fill="#3f582b" font-family="Georgia,serif" font-size="20" font-style="italic">curiosity</text>
+          <g fill="#40513a" font-family="Arial,sans-serif" font-size="10" letter-spacing="2"><text x="34" y="98">01 — WONDER</text><text x="454" y="518">02 — DISCOVER</text><text x="65" y="553">03 — GROW</text></g>
+          <g stroke="#758265" stroke-width=".7" fill="none"><path d="M144 98h38l17 28"/><path d="M443 514h-25l-18-25"/><path d="M159 550h30l20-27"/></g>
+        </svg>
+        <span class="art-stamp">A LITTLE CURIOSITY<br><i>goes a long way.</i></span>
+        <div class="art-caption"><span>IDEAS → EXPERIENCES → DISCOVERY</span><span>FIG. 01</span></div>
+      </div>
+    </section>
+
+    <div class="snapshot wrap">
+      <div class="snapshot-intro"><span class="eyebrow">THE PROJECT AT A GLANCE</span><span>Snapshot · 24 October 2026</span></div>
+      <dl class="metrics"><div><dt>Learning areas mapped</dt><dd>02<span>Math & Hebrew</span></dd></div><div><dt>Design prototypes archived</dt><dd>02<span>Iterations, preserved</span></dd></div><div><dt>Working local app</dt><dd>01<span>Numbers Club · v1.0</span></dd></div><div><dt>Documented software scenarios</dt><dd>72<span>Across five test suites*</span></dd></div></dl>
+      <p class="metric-note">*Documented passes across development and maintenance runs, using synthetic data. <a href="#checks">See the breakdown ↗</a></p>
+    </div>
+
+    <section id="journey" class="journey wrap section-space" aria-labelledby="journey-title">
+      <div class="section-heading"><div><div class="eyebrow">01 / THE JOURNEY</div><h2 id="journey-title">Good things grow<br><em>step by step.</em></h2></div><p>A learning framework became an idea.<br>An idea became something you can play.<br>Here’s how it’s coming together.</p></div>
+      <div class="journal">
+        <div class="timeline" role="group" aria-label="Choose a project milestone">
+          <button class="milestone active" data-step="0" aria-pressed="true"><span class="timeline-date">11 OCT</span><span class="timeline-dot"></span><span><b>Planting the seed</b><small>The learning foundation</small></span><span class="step-arrow" aria-hidden="true">↗</span></button>
+          <button class="milestone" data-step="1" aria-pressed="false"><span class="timeline-date">17 OCT</span><span class="timeline-dot"></span><span><b>Listening comes first</b><small>Feedback & a wider vision</small></span><span class="step-arrow" aria-hidden="true">↗</span></button>
+          <button class="milestone" data-step="2" aria-pressed="false"><span class="timeline-date">18 OCT</span><span class="timeline-dot"></span><span><b>Making it tangible</b><small>The first interactive prototype</small></span><span class="step-arrow" aria-hidden="true">↗</span></button>
+          <button class="milestone" data-step="3" aria-pressed="false"><span class="timeline-date">23 OCT</span><span class="timeline-dot"></span><span><b>From screens to software</b><small>A colorful workshop. Real saving.</small></span><span class="step-arrow" aria-hidden="true">↗</span></button>
+          <button class="milestone" data-step="4" aria-pressed="false"><span class="timeline-date">24 OCT</span><span class="timeline-dot hollow"></span><span><b>Ready to learn from use</b><small>First-session guide prepared</small></span><span class="step-arrow" aria-hidden="true">↗</span></button>
+        </div>
+        <article class="milestone-story" aria-live="polite" aria-atomic="true">
+          <div class="story-top"><span id="story-tag" class="pill">FOUNDATION CREATED</span><span id="story-number">01 / 05</span></div>
+          <div id="story-glyph" class="story-glyph" aria-hidden="true">✳</div>
+          <div class="story-copy"><time id="story-date" datetime="2026-10-11">11 October 2026</time><h3 id="story-title">A framework for curiosity.</h3><p id="story-text">The project began with a shared teaching framework, reusable activity templates, and learning maps for mathematics and Hebrew. Play, hands-on discovery, and projects became the starting point.</p><div id="story-foot" class="story-foot">Small goals. Active participation. Room to adapt.</div></div>
+        </article>
+      </div>
+      <noscript><p>17 Oct: feedback workflow and product vision prepared. 18 Oct: first interactive prototype created. 23 Oct: second prototype and working local app completed. 24 Oct: first-session guide prepared; learner trial still pending.</p></noscript>
+    </section>
+
+    <section id="workshop" class="workshop" aria-labelledby="workshop-title">
+      <div class="wrap">
+        <div class="section-heading"><div><div class="eyebrow">02 / IDEAS YOU CAN TOUCH</div><h2 id="workshop-title">Less abstract.<br><em>More “I get it.”</em></h2></div><div><span class="pill lime">BUILT & TESTED LOCALLY</span><p>Meet Numbers Club <span lang="he" dir="rtl">· מועדון המספרים</span><br>A small Hebrew learning journey that makes<br>subtraction visible, one bead at a time.</p></div></div>
+        <div class="experience-grid">
+          <div class="bead-demo">
+            <div class="demo-top"><span>A LITTLE IDEA FROM THE WORKSHOP</span><span aria-hidden="true">↙</span></div>
+            <div class="equation">42 <span>−</span> 17 <span>=</span> <span id="answer">?</span></div>
+            <div id="bead-board" class="bead-board" aria-hidden="true"></div>
+            <p id="demo-copy" class="demo-copy" aria-live="polite">Four groups of ten. Two single beads.<br>How could we take away seventeen?</p>
+            <button id="demo-next" class="button lime" type="button">Trade a ten for ten ones <span aria-hidden="true">↗</span></button>
+            <p class="demo-note">Interactive explanation · illustrative only · nothing is recorded</p>
+          </div>
+          <div class="experience-copy"><span class="eyebrow">ONE THOUGHTFUL LEARNING LOOP</span><ol class="learning-loop"><li><span>01</span><div><h3>Start with a story.</h3><p>42 beads, a gathering, and 17 beads to share. A concrete reason to work out what remains.</p></div></li><li><span>02</span><div><h3>Make room to explore.</h3><p>Warm-ups, visual groups of ten, helpful hints, and an optional next challenge.</p></div></li><li><span>03</span><div><h3>Reflect, then return.</h3><p>Separate feedback on accuracy, hints, and active time. Optional learner feedback. A saved place to come back to.</p></div></li></ol></div>
+        </div>
+        <details class="app-preview"><summary>Take a look inside the actual local app <span aria-hidden="true">+</span></summary><figure><img src="assets/workshop-preview.png" width="1200" height="1000" alt="The Numbers Club Hebrew interface: four groups of ten beads and two single beads illustrate 42 minus 17. A synthetic bicycle profile is shown." loading="lazy"><figcaption>Actual local app · screenshot from an isolated software test with synthetic data. The learning app runs locally; this public page is its project journal.</figcaption></figure></details>
+      </div>
+    </section>
+
+    <section id="checks" class="checks wrap section-space" aria-labelledby="checks-title">
+      <div class="section-heading"><div><div class="eyebrow">03 / BUILT WITH CARE</div><h2 id="checks-title">Playful on the surface.<br><em>Thoughtful underneath.</em></h2></div><p>Real local saving. Separate symbol profiles.<br>Pause, resume, and recovery.<br>The quiet work that supports the experience.</p></div>
+      <div class="checks-layout"><div class="test-total"><strong>72<span>↗</span></strong><h3>documented software scenarios</h3><p>Five suites covering the local app’s behavior.<br>All use synthetic, isolated data.</p><a href="PROGRESS.md">Read the development notes <span aria-hidden="true">↗</span></a></div><div class="test-breakdown"><div><span>Service & persistence</span><span class="test-track"><i style="--fill:100%"></i></span><b>25</b></div><div><span>Complete app journey</span><span class="test-track"><i style="--fill:64%"></i></span><b>16</b></div><div><span>Pause & navigation</span><span class="test-track"><i style="--fill:76%"></i></span><b>19</b></div><div><span>Save queue & retries</span><span class="test-track"><i style="--fill:36%"></i></span><b>9</b></div><div><span>Recovery scenarios</span><span class="test-track"><i style="--fill:12%"></i></span><b>3</b></div><p>These are recorded passes across multiple runs, not a live test feed. Service tests preceded the maintenance pass; the server was unchanged. Software checks do not demonstrate learning outcomes.</p></div></div>
+    </section>
+
+    <section id="next" class="next-section wrap section-space" aria-labelledby="next-title">
+      <div class="next-intro"><div class="eyebrow">04 / THE NEXT SMALL STEP</div><h2 id="next-title">Listen. Learn.<br><em>Make it better.</em></h2><p>The first-session guide is ready. The next step is a supported learner session: observe the experience, invite feedback, and choose one useful improvement.</p><div class="next-note"><span class="status-dot"></span> Planned · no learner trial results recorded yet</div></div>
+      <ol class="roadmap"><li><span class="roadmap-num">01</span><div><span class="pill">PREPARED</span><h3>A gentle first-session guide</h3><p>A short introduction, space for help and breaks, and a simple way to capture feedback.</p></div></li><li><span class="roadmap-num">02</span><div><span class="pill outline">NEXT</span><h3>Observe one real experience</h3><p>Keep learner words, adult observations, and interpretation separate. Let actual use inform the next change.</p></div></li><li><span class="roadmap-num">03</span><div><span class="pill outline">FUTURE EXPLORATION</span><h3>Grow from the evidence</h3><p>Refine the activity before expanding. Broader content and AI-supported personalization remain future directions; the current app uses pre-reviewed content.</p></div></li></ol>
+    </section>
+
+    <section class="closing"><div class="wrap"><span class="closing-star" aria-hidden="true">✳</span><p>Every great learning journey<br>starts with a little <em>curiosity.</em></p><span class="eyebrow">PLAY · DISCOVER · REFLECT · GROW</span></div></section>
+  </main>
+  <footer class="footer wrap"><div><a class="brand" href="#"><span class="brand-mark" aria-hidden="true">✳</span><span>learning<br><b>in motion.</b></span></a><p>A public window into the project’s development.<br>Personal profiles and learning records stay private.</p></div><div class="footer-right"><a href="https://github.com/chkp-shacharsh/homeschool-learning-journey">View on GitHub ↗</a><span>Curated snapshot · 24 Oct 2026</span><span>Made with intention. Built to keep growing.</span></div></footer>
+</body>
+</html>
